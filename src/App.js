@@ -15,7 +15,6 @@ const App = () => {
         value={number}
         onChange={(e) => setNumber(+e.target.value)}
       />
-      <button className="button">Calculate</button>
       <br />
       <ul className="list">
         {number !== 0
