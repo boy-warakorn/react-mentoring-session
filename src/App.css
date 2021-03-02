@@ -17,6 +17,17 @@
   margin-top: 1rem;
 }
 
+.form {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form > input {
+  margin-bottom: 1rem;
+}
+
 .list {
   list-style: none;
 }
