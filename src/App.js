@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { ResultItem } from "./ResultItem";
+import { ResultItem } from "./components/ResultItem";
 import "./App.css";
 
 const App = () => {
@@ -30,11 +30,11 @@ const App = () => {
       </form>
       <ul className="list">
         {multiplicationBase &&
-          listArray.map((_, index) => (
+          listArray.map((number, index) => (
             <ResultItem
               key={index}
               multiBase={multiplicationBase}
-              multiplyNum={index + 1}
+              multiplyNum={number}
             />
           ))}
       </ul>
