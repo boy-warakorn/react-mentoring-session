@@ -10,7 +10,7 @@ const App = () => {
 
   const onSubmit = (e) => {
     e.preventDefault();
-    if (number === "" || isNaN(number)) {
+    if (isNaN(number)) {
       return;
     }
     setMultiplicationBase(number);
@@ -25,6 +25,8 @@ const App = () => {
           onChange={(e) => {
             setNumber(parseInt(e.target.value));
           }}
+          max={100}
+          min={-100}
         />
         <input type="submit" />
       </form>
