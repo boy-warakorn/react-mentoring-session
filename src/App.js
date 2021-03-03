@@ -9,7 +9,6 @@ const App = () => {
   const [multiplicationBase, setMultiplicationBase] = useState();
 
   // const listArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
-
   const listArray = [...Array(ARRAY_SIZE + 1).keys()].slice(1);
 
   const onSubmit = (e) => {
